@@ -34,7 +34,7 @@ export default {
    ** Global CSS
    */
   css: [
-    '@assets/css/dark.css'
+    '@assets/css/style.css'
   ],
   /*
    ** Plugins to load before mounting the App

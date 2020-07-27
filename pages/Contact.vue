@@ -3,7 +3,8 @@
     <b-row>
       <b-col md="3"></b-col>
       <b-col>
-        <h2>Send a message 💌</h2>
+        <h2>Get in touch 💌</h2>
+        <p class="text-left">If you have any question or just want to say hi, i'll try my best to get back to you.</p>
         <b-form @submit="onSubmit">
           <b-alert show variant="success" v-if="showAlert">
             <strong>All done 🎉</strong><br>

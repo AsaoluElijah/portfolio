@@ -2,13 +2,20 @@
   <div class="about page  animate__animated animate__fadeIn">
     <h2>Recent Project</h2>
     <div class="container">
-      <div class="row mt-5" v-for="(project, index) in projects" :key="index">
-        <div class="col-md-6">
-          <img :src="project.image_cover" alt="" style="width: inherit;" />
+      <div class="row" v-for="(project, index) in projects" :key="index">
+        <div class="col-md-5">
+          <img
+            :src="project.image_cover"
+            :alt="project.title"
+            class="project-cover"
+          />
         </div>
-        <div class="col-md-6">
-          <h2 class="mt-3" style="text-align: left;">{{ project.title }} <hr class="dope"> </h2>
-          <b-card class="mt-5 mb-3">
+        <div class="col-md-5">
+          <h2 class="mt-3" style="text-align: left;">
+            {{ project.title }}
+            <hr class="dope" />
+          </h2>
+          <b-card class="mt-3 mb-3 text-left text-dark">
             <p>{{ project.description }}</p>
             <b-link :href="project.link"
               >Check it out! <LinkIcon style="color: #000;"
@@ -20,45 +27,17 @@
           </b-card>
         </div>
       </div>
-      <!-- <div class="row">
-        <div class="col-md-6" v-for="project in projects" :key="project.title">
-          <b-card
-            :title="project.title"
-            :img-src="project.image_cover"
-            img-alt="Image"
-            img-top
-            tag="article"
-            class="mb-3"
-          >
-            <b-badge
-              pill
-              :variant="
-                tagVariants[Math.floor(Math.random() * tagVariants.length)]
-              "
-              class="mb-3"
-              >{{ project.tag }}</b-badge
-            >
-            <b-card-text v-html="project.description"> </b-card-text>
-            <b-link :href="project.link"
-              >Check it out! <LinkIcon style="color: #000;"
-            /></b-link>
-            <hr />
-            <b-link :href="project.github_url"
-              >View source code <GithubIcon style="color: #000;"
-            /></b-link>
-          </b-card>
-        </div>
-      </div> -->
     </div>
   </div>
 </template>
 <script>
 import LinkIcon from "vue-ionicons/dist/md-link.vue";
 import GithubIcon from "vue-ionicons/dist/logo-github.vue";
+
 export default {
   components: {
     GithubIcon,
-    LinkIcon
+    LinkIcon,
   },
   data() {
     return {
@@ -78,7 +57,7 @@ export default {
           description:
             "Proton charges you with positivity when you open a new chrome tab, plus you also get worldwide latest info.",
           image_cover: require("@/assets/illustration.jpg"),
-          github_url: "",
+         github_url: "",
           link: ""
         },
         {
@@ -117,33 +96,19 @@ export default {
 </script>
 <style scoped>
 .row {
-  margin-top: 50px;
+  margin-top: 70px;
 }
-.card {
-  color: #000;
+.project-cover {
+  width: inherit;
+  border-radius: 3px;
 }
-.card-img-top {
-  background: #ccc;
-  /* width: auto;
-  height: auto; */
-  /* max-height: 220px; */
-}
-.card-body {
-  text-align: left;
-}
-.card-title {
-  text-align: center;
-}
-.card-text {
-  font-size: 18px;
-}
-hr.dope{
+hr.dope {
   border: 0;
-    width: 90px;
-    border-top: 2px solid #dc3545;
-    text-align: left;
-    margin: initial;
-    margin-top: 7px;
-    margin-left: 5px;
+  width: 90px;
+  border-top: 2px solid #dc3545;
+  text-align: left;
+  margin: initial;
+  margin-top: 7px;
+  margin-left: 5px;
 }
 </style>

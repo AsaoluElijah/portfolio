@@ -10,7 +10,7 @@
       />
     </b-col>
     <b-col md="8">
-      <h2 class="intro">
+      <h2 class="intro animate__animated animate__fadeInUp animate__fast">
         Hi,
         <br />I<span>'m Asaolu&nbsp;Elijah</span>.
       </h2>
@@ -20,11 +20,11 @@
         A <b>front-end developer</b> and
         <b>technical writer</b> passionate about solving problems with
         tech.<br />
-        I am skilled with building exceptional <b>website</b> and <b>mobile applications</b>, and currently i'm
+        I am skilled with building exceptional <b>websites</b> and <b>mobile applications</b>, and currently i'm
         exploring the AI (Artificial Intelligence) ecosystem.
         <br />
         <b-button
-          class="action-btn animate__animated animate__wobble animate__delay-3s animate__fast"
+          class="action-btn animate__animated animate__wobble animate__delay-4s animate__fast"
           to="/projects"
           >Explore ></b-button
         >
@@ -32,7 +32,7 @@
           >Get In Touch</b-button
         >
         <div
-          class="social-icons animate__animated animate__fadeInUp"
+          class="social-icons animate__animated animate__fadeInUp animate__delay-1s"
         >
           <a
             href="http://github.com/asaoluelijah"

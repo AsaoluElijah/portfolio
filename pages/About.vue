@@ -7,8 +7,8 @@
           <h4 class="mt-4">Hey 👋</h4>
           <p>
             My name is Asaolu Elijah, i am a <b>front-end developer</b> and
-            <b>technical writer</b> currently studying Computer Science at
-            <u>OAUSTECH</u> (Nigeria).
+            <b>technical writer</b>. Currently studying Computer Science at
+            <u>OAUSTECH</u>.
           </p>
           <p>
             I have <b>{{ currYear - startYear }}+ years experience</b> in
@@ -121,8 +121,8 @@ export default {
   height: inherit;
   border-radius: 5px;
 }
-.abt-img:hover {
+/* .abt-img:hover {
   animation: swing;
   animation-duration: 2s;
-}
+} */
 </style>
