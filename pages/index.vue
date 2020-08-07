@@ -11,17 +11,15 @@
     </b-col>
     <b-col md="8">
       <h2 class="intro animate__animated animate__fadeInUp animate__fast">
-        Hi,
+        Hi 👋,
         <br />I<span>'m Asaolu&nbsp;Elijah</span>.
       </h2>
-      <div
-        class="col-md-10 info"
-      >
-        A <b>front-end developer</b> and
-        <b>technical writer</b> passionate about solving problems with
-        tech.<br />
-        I am skilled with building exceptional <b>websites</b> and <b>mobile applications</b>, and currently i'm
-        exploring the AI (Artificial Intelligence) ecosystem.
+      <div class="col-md-10 info">
+        A <b>front-end developer</b> and <b>technical writer</b> passionate
+        about solving problems with tech.<br />
+        I am skilled with building exceptional <b>websites</b> and
+        <b>mobile applications</b>, and currently i'm exploring the AI
+        (Artificial Intelligence) ecosystem.
         <br />
         <b-button
           class="action-btn animate__animated animate__wobble animate__delay-4s animate__fast"
@@ -97,7 +95,18 @@ export default {
         name: "description",
         content:
           "Asaolu Elijah is an awesome front-end developer and technical writer, passionate about building solutions that works across multiple platforms with high accessibility approach. Elijah has vast knowledge in web development with over 3+ years experience in building actual products"
-      }
+      },
+      {
+        hid: "og:title",
+        name: "og:title",
+        content: "Portfolio ⚡ - Asaolu Elijah"
+      },
+      {
+        property: "og:description",
+        content:
+          "Asaolu Elijah is an awesome front-end developer and technical writer, passionate about building solutions that works across multiple platforms with high accessibility approach. Elijah has vast knowledge in web development with over 3+ years experience in building actual products"
+      },
+      { hid: "og:image", name: "og:image", content: "~/assets/coding.png" }
     ]
   },
   methods: {

@@ -37,7 +37,7 @@ import GithubIcon from "vue-ionicons/dist/logo-github.vue";
 export default {
   components: {
     GithubIcon,
-    LinkIcon,
+    LinkIcon
   },
   data() {
     return {
@@ -57,7 +57,7 @@ export default {
           description:
             "Proton charges you with positivity when you open a new chrome tab, plus you also get worldwide latest info.",
           image_cover: require("@/assets/illustration.jpg"),
-         github_url: "",
+          github_url: "",
           link: ""
         },
         {
@@ -89,6 +89,21 @@ export default {
         name: "description",
         content:
           "View all the recents open-sourced projects built with ♥ by Asaolu Elijah, open-sourced means this project source code are publicly available for everyone to use or modify."
+      },
+      {
+        hid: "og:title",
+        name: "og:title",
+        content: "Recent Projects 💻 - Asaolu Elijah"
+      },
+      {
+        property: "og:description",
+        content:
+          "View all the recents open-sourced projects built with ♥ by Asaolu Elijah, open-sourced means this project source code are publicly available for everyone to use or modify."
+      },
+      {
+        hid: "og:image",
+        name: "og:image",
+        content: "~/assets/man-computer.png"
       }
     ]
   }

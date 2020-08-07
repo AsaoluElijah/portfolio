@@ -4,11 +4,15 @@
       <b-col md="3"></b-col>
       <b-col>
         <h2>Get in touch 💌</h2>
-        <p class="text-left">If you have any question or just want to say hi, i'll try my best to get back to you.</p>
+        <p class="text-left">
+          If you have any question or just want to say hi, i'll try my best to
+          get back to you.
+        </p>
         <b-form @submit="onSubmit">
           <b-alert show variant="success" v-if="showAlert">
-            <strong>All done 🎉</strong><br>
-              Thanks for reaching out {{this.form.name}}, I'll reply as soon as i can.
+            <strong>All done 🎉</strong><br />
+            Thanks for reaching out {{ this.form.name }}, I'll reply as soon as
+            i can.
           </b-alert>
           <b-form-group id="input-group-1" label="Your Name:" label-for="name">
             <b-form-input
@@ -61,8 +65,8 @@ export default {
       form: {
         name: "",
         email: "",
-        message: "",
-      },
+        message: ""
+      }
     };
   },
   methods: {
@@ -72,14 +76,14 @@ export default {
       var email = this.form.email;
       var message = this.form.message;
       fetch(`formspree/url/send?name=${name}&email=${email}&message=${message}`)
-      .then(res => res.json())
-      .then(() => {
-        this.showAlert = true;
-      })
-      .catch( ()=> {
-        alert('Sending message failed, please try again');
-      })
-    },
+        .then(res => res.json())
+        .then(() => {
+          this.showAlert = true;
+        })
+        .catch(() => {
+          alert("Sending message failed, please try again");
+        });
+    }
   },
   head: {
     title: "Contact 📧 - Asaolu Elijah",
@@ -88,6 +92,20 @@ export default {
         hid: "description",
         name: "description",
         content: "Do you have any enquires? Send a message now to Asaolu Elijah"
+      },
+      {
+        hid: "og:title",
+        name: "og:title",
+        content: "Contact 📧 - Asaolu Elijah"
+      },
+      {
+        property: "og:description",
+        content: "Do you have any enquires? Send a message now to Asaolu Elijah"
+      },
+      {
+        hid: "og:image",
+        name: "og:image",
+        content: "~/assets/contact.jpg"
       }
     ]
   }
