@@ -1,0 +1,31 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+body{
+    user-select: none;
+    font-family: "Quicksand", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    background-color: #fff;
+    background-image: url(../bg.svg);
+    background-attachment: fixed;
+    color: #000;
+}
+
+/* FOR DARK MODE */
+
+body.dark{
+    background-color: rgb(10, 25, 47);
+    color: #fff;
+}
+body.dark .navbar-dark{
+    background-color: rgb(10, 25, 47) !important;
+}
+body.dark .social-icons a{
+    color: #dee2e6;
+}body.dark .social-icons a:hover{
+    color: #6c757d;
+}
+body.dark .nav-item:hover{
+    background-color: #343a40;
+}
