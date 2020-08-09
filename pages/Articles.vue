@@ -86,7 +86,16 @@ export default {
         name: "description",
         content:
           "Read articles written by Asaolu Elijah, articles include topics under web development (html, css, javascript), mobile app development and many more."
-      }
+      },
+      {
+        hid: "og:title",
+        name: "og:title",
+        content: "Recent Articles 📚 - Asaolu Elijah"
+      },
+      {
+        property: "og:description",
+        content: "Read articles written by Asaolu Elijah, articles include topics under web development (html, css, javascript), mobile app development and many more."
+      },
     ]
   },
   methods: {

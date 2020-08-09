@@ -105,7 +105,7 @@ export default {
       {
         hid: "og:image",
         name: "og:image",
-        content: "~/assets/contact.jpg"
+        content: require("@/assets/contact.jpg")
       }
     ]
   }

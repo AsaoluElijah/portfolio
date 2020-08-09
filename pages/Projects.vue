@@ -69,7 +69,7 @@ export default {
           github_url: "https://github.com/AsaoluElijah/qrcode",
           link: "https://asaoluelijah.github.io/qrcode/"
         }
-      ]
+      ],
     };
   },
   methods: {
@@ -103,7 +103,7 @@ export default {
       {
         hid: "og:image",
         name: "og:image",
-        content: "~/assets/man-computer.png"
+        content: require("@/assets/man-computer.png")
       }
     ]
   }
