@@ -6,17 +6,17 @@
           <h1 class="line-after">About Me</h1>
           <h4 class="mt-4">Hey 👋</h4>
           <p>
-            My name is Asaolu Elijah, i am a <b>front-end developer</b> and
+            My name is Asaolu Elijah, I am a <b>front-end developer</b> and
             <b>technical writer</b>. Currently studying Computer Science at
             <u>OAUSTECH</u>.
           </p>
           <p>
             I have <b>{{ currYear - startYear }}+ years experience</b> in
-            crafting beautiful web and mobile interfaces. Plus i am an agile
-            learner, i learn new cool stuffs everyday.
+            crafting beautiful web and mobile interfaces. Plus I am an agile
+            learner, I learn new cool stuffs everyday.
           </p>
           <h4 class="mt-5">Tech Stacks</h4>
-          <p>Below are some of the technologies i use daily.</p>
+          <p>Below are some of the technologies I use daily:</p>
           <div class="row animate__animated animate__fadeInUp">
             <div class="col">
               <ul style="list-style-type: circle;">
@@ -27,9 +27,9 @@
             </div>
             <div class="col">
               <ul style="list-style-type: circle;">
-                <li>Javascript</li>
+                <li>JavaScript</li>
                 <li>Vue.js</li>
-                <li>Wordpress</li>
+                <li>WordPress</li>
               </ul>
             </div>
           </div>
