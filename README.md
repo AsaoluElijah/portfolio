@@ -6,7 +6,7 @@
 
 ![Light House Report](https://raw.githubusercontent.com/AsaoluElijah/portfolio/master/light-house-report.png)
 
-### Technologies + Tools used 
+### Technologies + Tools used 👇
 
 - [NuxtJs](https://nuxtjs.org/)
 - [Bootstrap-vue](https://bootstrap-vue.org/)
