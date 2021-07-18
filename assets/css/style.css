@@ -1,29 +1,94 @@
-body{
-    user-select: none;
-    font-family: "Quicksand", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    background-color: #fff;
-    background-image: url(../bg.svg);
-    background-attachment: fixed;
-    color: #000;
+body {
+  user-select: none;
+  font-family: "Quicksand", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background-color: #fff;
+  background-image: url(../bg.svg);
+  background-attachment: fixed;
+  color: #000;
+}
+
+/* MAIN STYLING */
+.row {
+  margin-top: 170px;
+}
+.action-btn {
+  display: inline-table;
+  margin: 7px;
+}
+.info {
+  margin-top: 10px;
+  text-align: left;
+  line-height: 2em;
+  font-size: 18px;
+  font-weight: normal;
+  margin-left: 7px;
+}
+img {
+  background-color: rgb(46, 42, 42);
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+.social-icons {
+  margin-top: 25px;
+}
+.social-icons a {
+  font-size: 25px;
+  margin: 15px;
+  color: rgba(0, 0, 0, 0.712);
+}
+.social-icons a:hover {
+  color: #000;
+}
+.intro {
+  font-size: 45px;
+  font-weight: bolder;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  /* color: #000; */
+}
+/* for mobile devices */
+@media screen and (max-width: 420px) {
+  .row {
+    margin-top: 0px;
+  }
+  img {
+    width: 150px;
+    height: 150px;
+  }
+  .intro {
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+.btn-primary {
+  background-color: #f00;
+  border-color: #f00;
+}
+.btn-primary:hover {
+  background-color: rgb(240, 0, 0);
+  border-color: rgb(240, 0, 0);
 }
 
 /* FOR DARK MODE */
-
-body.dark{
-    background-color: rgb(10, 25, 47);
-    color: #fff;
+body.dark {
+  background-color: rgb(10, 25, 47);
+  color: #fff;
 }
-body.dark .navbar-dark{
-    background-color: rgb(10, 25, 47) !important;
+body.dark .navbar-dark {
+  background-color: rgb(10, 25, 47) !important;
 }
-body.dark .social-icons a{
-    color: #dee2e6;
-}body.dark .social-icons a:hover{
-    color: #6c757d;
+body.dark .social-icons a {
+  color: #dee2e6;
 }
-body.dark .nav-item:hover{
-    background-color: #343a40;
+body.dark .social-icons a:hover {
+  color: #6c757d;
+}
+body.dark .nav-item:hover {
+  background-color: #343a40;
 }
