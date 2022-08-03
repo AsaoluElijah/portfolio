@@ -1,32 +1,23 @@
 <template>
   <b-row style="margin-left: 0;margin-right: 0;">
     <b-col md="4">
-      <b-img
-        :src="avatar"
-        id="avatar-img"
-        alt="Asaolu Elijah Memoji"
-        @mouseenter="changeAvatar"
-        @mouseleave="changeAvatar"
-      />
+      <b-img :src="avatar" id="avatar-img" alt="Asaolu Elijah Memoji" @mouseenter="changeAvatar"
+        @mouseleave="changeAvatar" />
     </b-col>
 
     <b-col md="8">
       <h2 class="intro animate__animated animate__fadeInUp animate__fast">
-        Hi 👋,
-        <br />I<span>'m Asaolu&nbsp;Elijah</span>.
+        Hola 👋,
+        <br />I<span>'m Ibrahim&nbsp;Ogunbiyi</span>.
       </h2>
 
       <div class="col-md-10 info">
-        A <b>front-end developer</b> and <b>technical writer</b> passionate
-        about solving problems with tech.<br />
-        I am skilled with building exceptional <b>websites</b> and
-        <b>mobile applications</b>, and currently i'm exploring the AI
-        (Artificial Intelligence) ecosystem.
+        I'm an <b>Ardent Data Scientist</b> who loves breaking and fixing up stuff related to data,
+        and clearly taking care of the data to give me insights as to what it is portraying.
+        Along side my data science skills. I'm also a <b>Technical Writer</b> where I blog things on
+        anything related to data.
         <br />
-        <b-button
-          class="action-btn animate__animated animate__wobble animate__delay-4s animate__fast"
-          to="/projects"
-        >
+        <b-button class="action-btn animate__animated animate__wobble animate__delay-4s animate__fast" to="/projects">
           Explore >
         </b-button>
 
@@ -35,9 +26,7 @@
         </b-button>
 
         <!-- .SOCIAL LINKS SECTION -->
-        <div
-          class="social-icons animate__animated animate__fadeInUp animate__delay-1s"
-        >
+        <div class="social-icons animate__animated animate__fadeInUp animate__delay-1s">
           <social-link :to="socialLinks.github">
             <GithubIcon />
           </social-link>
@@ -90,34 +79,40 @@ export default {
       avatar: require("@/assets/avatar-1.webp"),
       // ADD YOUR SOCIAL LINKS HERE 👇
       socialLinks: {
-        github: "http://github.com/asaoluelijah",
-        linkedin: "https://www.linkedin.com/in/asaoluelijah/",
-        twitter: "https://twitter.com/asaolu_elijah",
-        facebook: "https://facebook.com/asaoluelijah01",
-        mail: "mailto:info4a.elijah@gmail.com",
+        github: "https://github.com/ibrahim-ogunbiyi",
+        linkedin: "https://www.linkedin.com/in/ibrahimogunbiyi/",
+        twitter: "https://twitter.com/comejoinfolks",
+        facebook: "",
+        mail: "mailto:ibrahimabayomi234@gmail.com",
         youtube: ""
       }
     };
   },
 
   head: {
-    title: "Portfolio ⚡ - Asaolu Elijah",
+    title: "Portfolio 📊 - Ibrahim Ogunbiyi",
     meta: [
       {
         hid: "description",
         name: "description",
         content:
-          "Asaolu Elijah is an awesome front-end developer and technical writer, passionate about building solutions that works across multiple platforms with high accessibility approach. Elijah has vast knowledge in web development with over 3+ years experience in building actual products"
+          `I love applying my knowledge of statistics, programming language and machine learning
+             to help me drive at a better business solution and I also enjoy telling stories from data 
+             by leveraging statistical summaries either numerically or through the use of any 
+             powerful visualization tool I can get my hands on. Plus I'm an agile learner. I learn new stuff everyday.`
       },
       {
         hid: "og:title",
         name: "og:title",
-        content: "Portfolio ⚡ - Asaolu Elijah"
+        content: "Portfolio 📊 - Ibrahim Ogunbiyi"
       },
       {
         property: "og:description",
         content:
-          "Asaolu Elijah is an awesome front-end developer and technical writer, passionate about building solutions that works across multiple platforms with high accessibility approach. Elijah has vast knowledge in web development with over 3+ years experience in building actual products"
+          `I love applying my knowledge of statistics, programming language and machine learning
+             to help me drive at a better business solution and I also enjoy telling stories from data 
+             by leveraging statistical summaries either numerically or through the use of any 
+             powerful visualization tool I can get my hands on. Plus I'm an agile learner. I learn new stuff everyday.`
       },
       {
         hid: "og:image",

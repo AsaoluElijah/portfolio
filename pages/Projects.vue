@@ -43,32 +43,33 @@ export default {
     return {
       projects: [
         {
-          title: "Say-It",
-          tag: "Progressive Web App",
+          title: "Car Price Prediction",
+          tag: "Regression Model",
           description:
-            "Typing sucks, say the words instead and the text will be generated for you.",
-          image_cover: require("@/assets/speak.jpg"),
-          github_url: "https://github.com/AsaoluElijah/say-it/",
-          link: "https://asaoluelijah.github.io/say-it"
-        },
-        {
-          title: "Proton",
-          tag: "Chrome-Extention, Coming Soon!",
-          description:
-            "Proton charges you with positivity when you open a new chrome tab, plus you also get worldwide latest info.",
-          image_cover: require("@/assets/illustration.jpg"),
-          github_url: "",
-          link: ""
-        },
-        {
-          title: "Qr-Generator",
-          tag: "Progressive Web App",
-          description:
-            "Easily share secret messages with friends by converting text to qrcode.",
-          image_cover: require("@/assets/qr-1.png"),
+            "Built a Model using NLP and CatboostRegressor to Predict the Price of a Car",
+          image_cover: require("@/assets/a.jpg"),
           github_url: "https://github.com/AsaoluElijah/qrcode",
           link: "https://asaoluelijah.github.io/qrcode/"
-        }
+        },
+        {
+          title: "Customer Personality EDA",
+          tag: "Progressive Web App",
+          description:
+            "Performed Exploratory Data Analysis to help Target which Group of Customers Precisely a Company will Recommend a Particular Product to.",
+          image_cover: require("@/assets/CPA.jpg"),
+          github_url: "https://github.com/ibrahim-ogunbiyi/Customer-Personal-Analysis-EDA/blob/main/Customer%20Segmentation%20EDA.ipynb",
+          link: "https://github.com/ibrahim-ogunbiyi/Customer-Personal-Analysis-EDA"
+          
+        },
+        {
+          title: "Chronic Kidney Disease (CKD) ",
+          tag: "Prediction of Chronic Disease Infection",
+          description:
+            "Performed Exloratory Data Analysis and Build a Predictive Model Using Random Forest to help Classify whether a Patient has CKD or not.",
+          image_cover: require("@/assets/Ckd.jpg"),
+          github_url: "https://github.com/ibrahim-ogunbiyi/Chronic-Kidney-Disease-CKD-Prediction/blob/main/CKD%20prediction.ipynb",
+          link: "https://ibrahim-ogunbiyi-chronic-kidney-disease-ckd-predict-demo-eoim27.streamlitapp.com/"
+        },
       ],
     };
   },
@@ -125,5 +126,8 @@ hr.dope {
   margin: initial;
   margin-top: 7px;
   margin-left: 5px;
+}
+img{
+  height: initial;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <b-navbar toggleable="lg" fixed="top" type="light" variant="light">
     <b-navbar-brand tag="h1" to="/" style="font-weight: bolder;"
-      >> AE.</b-navbar-brand
+      >Geek</b-navbar-brand
     >
     <b-navbar-toggle
       target="nav-collapse"

@@ -4,32 +4,42 @@
       <div class="col-md-6">
         <div class="about">
           <h1 class="line-after">About Me</h1>
-          <h4 class="mt-4">Hey 👋</h4>
+          <h4 class="mt-4">Hola 👋</h4>
           <p>
-            My name is Asaolu Elijah, I am a <b>front-end developer</b> and
-            <b>technical writer</b>. Currently studying Computer Science at
-            <u>OAUSTECH</u>.
+            My name is <b>Ibrahim Ogunbiyi</b> but you can call me <b>Geek</b>. I'm a <b>Data Scientist</b> and a <b>Technical Writer</b>.
+            I'm currently studying computer science at the Prestigious Ondo State University <u>OAUSTECH</u> in Nigeria.
           </p>
-          <p>
-            I have <b>{{ currYear - startYear }}+ years experience</b> in
-            crafting beautiful web and mobile interfaces. Plus I am an agile
-            learner, I learn new cool stuffs everyday.
-          </p>
+            <p>I love applying my knowledge of statistics, programming language and machine learning
+             to help me drive at a better business solution and I also enjoy telling stories from data 
+             by leveraging statistical summaries either numerically or through the use of any 
+             powerful visualization tool I can get my hands on. Plus I'm an agile learner. I learn new stuff everyday</p>
+          
           <h4 class="mt-5">Tech Stacks</h4>
           <p>Below are some of the technologies I use daily:</p>
-          <div class="row animate__animated animate__fadeInUp">
-            <div class="col">
-              <ul style="list-style-type: circle;">
-                <li>HTML & CSS</li>
-                <li>Node.js</li>
-                <li>PHP</li>
+          <div class="row animate__animated animate__fadeInUp mt-0">
+            <div class="col-md-4">
+              <ul class="p-0" style="list-style-type: circle;">
+              <h5>Programming Language</h5>
+                <li>Python.</li>
+                <li>MySQL.</li>
+                <li>HTML&CSS.</li>
               </ul>
             </div>
-            <div class="col">
-              <ul style="list-style-type: circle;">
-                <li>JavaScript</li>
-                <li>Vue.js</li>
-                <li>WordPress</li>
+            <div class="col-md-4">
+              <h5>Libraries / Framework</h5>
+              <ul class="p-0" style="list-style-type: circle;">
+                <li>Scikit-Learn</li>
+                <li>NLTK and RE library</li>
+                <li>Pandas</li>
+                <li>Numpy</li>
+                <li>Seaborn,Matplotlib,and Plotly</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h5>Visulization Tools</h5>
+              <ul class="p-0" style="list-style-type: circle;">
+                <li>Power BI</li>
+                <li>Tableau</li>
               </ul>
             </div>
           </div>
@@ -85,14 +95,18 @@ export default {
       ]
     };
   },
+  // YOU'LL NEED TO UPDATE THIS FOR SEO (IN EVERY PAGE)
   head: {
-    title: "About 🕵️‍♂️ - Asaolu Elijah",
+    title: "About 🕵️‍♂️ - Ibrahim Ogunbiyi",
     meta: [
       {
         hid: "description",
         name: "description",
         // currYear - startYear
-        content: `Hey there 👋 My name is Asaolu Elijah, i am a front-end developer and technical writer currently studying Computer Science at OAUSTECH(Nigeria). i have many years of experience in crafting beautiful web and mobile interfaces. Plus i am an agile learner, i learn new cool stuffs everyday.`
+        content: `I love applying my knowledge of statistics, programming language and machine learning
+             to help me drive at a better business solution and I also enjoy telling stories from data 
+             by leveraging statistical summaries either numerically or through the use of any 
+             powerful visualization tool I can get my hands on. Plus I'm an agile learner. I learn new stuff everyday.`
       }
     ]
   }
@@ -125,4 +139,17 @@ export default {
   animation: swing;
   animation-duration: 2s;
 } */
+ul.col-pro{
+  border-style: none;
+  background-color:aquamarine;
+  width:500px;
+  height: 200px;
+  border-radius: 4%;
+
+}
+h5{
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
 </style>

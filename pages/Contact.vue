@@ -38,7 +38,7 @@
               v-model="formData.message"
               no-resize
               rows="3"
-              placeholder="Watsup Elijah, are you available for.."
+              placeholder="What's up Ibrahim, are you available for.."
               required
             ></b-form-textarea>
           </b-form-group>
@@ -70,7 +70,7 @@ export default {
       data.append("Email", self.formData.email);
       data.append("Message", self.formData.message);
 
-      fetch("https://formspree.io/f/mvodbwva", {
+      fetch("https://formspree.io/f/xdojnndl", {
         method: "POST",
         body: data,
         headers: {
